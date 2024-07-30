@@ -11,7 +11,8 @@ import SwiftUI
 struct TuneInStationApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            StationListView(viewModel: StationListViewModel(tuneInAPI: TuneInAPI()))
+                .preferredColorScheme(.dark)
         }
     }
 }

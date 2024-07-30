@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "F95064EB-A6AB-44DE-90D3-6FB8F5B67144"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8AE3A824-1D48-4ABE-A8DA-6D134A80EF25"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TuneInStation/StationList/ViewModel/StationListViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "97"
+            endingLineNumber = "97"
+            landmarkName = "sortedStations(_:sorting:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "8AE3A824-1D48-4ABE-A8DA-6D134A80EF25 - e5501ab602319cbe"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TuneInStation.StationListViewModel.sortStations(sorting: TuneInStation.StationSorting) -&gt; ()"
+                  moduleName = "TuneInStation"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kruberlick/Documents/Xcode%20Projects/TuneInStation/TuneInStation/StationList/ViewModel/StationListViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "100"
+                  endingLineNumber = "100"
+                  offsetFromSymbolStart = "80">
+               </Location>
+               <Location
+                  uuid = "8AE3A824-1D48-4ABE-A8DA-6D134A80EF25 - e5501ab602319c9f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TuneInStation.StationListViewModel.sortStations(sorting: TuneInStation.StationSorting) -&gt; ()"
+                  moduleName = "TuneInStation"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kruberlick/Documents/Xcode%20Projects/TuneInStation/TuneInStation/StationList/ViewModel/StationListViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "101"
+                  endingLineNumber = "101"
+                  offsetFromSymbolStart = "80">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7606F11E-B87D-4A6F-B7F3-7EC768374A84"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TuneInStation/StationList/ViewModel/StationListViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "87"
+            endingLineNumber = "87"
+            landmarkName = "filterStations(tags:sorting:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
