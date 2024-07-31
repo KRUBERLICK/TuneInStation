@@ -35,6 +35,32 @@ final class StationPlaybackViewModel: StationPlaybackViewModelType {
             }
             .store(in: &subscriptions)
         
+        NotificationCenter
+            .default
+            .publisher(for: AVAudioSession.interruptionNotification, object: AVAudioSession.sharedInstance())
+            .receive(on: DispatchQueue.main)
+            .sink { [weak self] notification in
+                guard let strongSelf = self else {
+                    return
+                }
+                
+                guard let userInfo = notification.userInfo,
+                      let typeValue = userInfo[AVAudioSessionInterruptionTypeKey] as? UInt,
+                      let type = AVAudioSession.InterruptionType(rawValue: typeValue) else {
+                    return
+                }
+                
+                switch type {
+                case .began:
+                    strongSelf.avPlayer?.pause()
+                case .ended:
+                    strongSelf.avPlayer?.play()
+                default:
+                    break
+                }
+            }
+            .store(in: &subscriptions)
+        
         self.initPlayer()
     }
     

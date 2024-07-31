@@ -132,18 +132,18 @@ struct StationPlaybackView<ViewModel: StationPlaybackViewModelType>: View {
             }
             .scrollIndicators(.never)
         }
-//        .alert(
-//            "Error",
-//            isPresented: .constant(viewModel.lastErrorMessage != nil),
-//            presenting: viewModel.lastErrorMessage,
-//            actions: { _ in
-//                Button("OK") {
-//                    viewModel.lastErrorMessage = nil
-//                }
-//            },
-//            message: { errorMessage in
-//            Text(errorMessage)
-//        })
+        .alert(
+            "Error",
+            isPresented: .constant(viewModel.lastErrorMessage != nil),
+            presenting: viewModel.lastErrorMessage,
+            actions: { _ in
+                Button("OK") {
+                    viewModel.lastErrorMessage = nil
+                }
+            },
+            message: { errorMessage in
+            Text(errorMessage)
+        })
         .padding()
         .background(Color(hex: "0E1118"))
     }
