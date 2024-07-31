@@ -51,7 +51,6 @@ struct StationListView<ViewModel: StationListViewModelType>: View {
                                                 .fill(.gray)
                                         }
                                     }
-                                    .background(.gray)
                                     .clipShape(RoundedRectangle(cornerRadius: 5))
                                 })
                                 .aspectRatio(1 / 1, contentMode: .fill)
