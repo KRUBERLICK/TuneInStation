@@ -82,6 +82,16 @@ final class StationPlaybackViewModel: StationPlaybackViewModelType {
             return
         }
         
+        let audioSession = AVAudioSession.sharedInstance()
+        
+        do {
+            try audioSession.setCategory(.playback, mode: .default)
+            try audioSession.setActive(true)
+        } catch {
+            lastErrorMessage = "Failed to configure audio playback"
+            return
+        }
+        
         avPlayer = AVPlayer(url: streamURL)
         avPlayer?.play()
     }
